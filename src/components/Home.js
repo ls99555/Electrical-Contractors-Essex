@@ -1,13 +1,13 @@
 import React from 'react';
-import './Home.js'; // Ensure Home.scss is in the src/components directory
+import './Home.scss'; // Ensure Home.scss is in the src/components directory
 import Button from './Button';
 
 const Home = () => {
     return (
-        <main className="index-page">
+        <main>
             {/* Header Image */}
             <div className="cu-image">
-                <img src="Images/cu.jpg" alt="Consumer unit" />
+                <img src={require("../assets/cu.jpg" )}alt="Consumer unit" />
             </div>
         
             {/* Brief description of about us with a button link to team.html page */}

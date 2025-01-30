@@ -1,22 +1,36 @@
+@import './src/App.scss';
+
+// button styling
 .arrow-button {
-    background-color: #61dafb;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .button-arrow {
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .arrow-button:hover .button-arrow {
-    opacity: 1;
-  }
+  background-color: $primary-color;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  width: 200px
+}
+
+.button-arrow {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.arrow-button:hover .button-arrow {
+  opacity: 1;
+}
+
+
+
+
+ 
