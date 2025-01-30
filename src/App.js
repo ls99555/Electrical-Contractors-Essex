@@ -9,8 +9,8 @@ import Services from './components/Services';
 import Estimates from './components/Estimates';
 import Contact from './components/Contact';
 
-// Import styling for App.css
-import './App.css';
+// Import styling for App.scss
+import './App.scss';
 
 // Website
 function App() {
