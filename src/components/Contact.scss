@@ -1,7 +1,7 @@
 @import './src/App.scss';
 
 // Contact Page Styles
-main {
+.contact-page {
     display: grid;
     grid-template-areas: 
         "header-image header-image"
@@ -14,7 +14,7 @@ main {
 
     .header-image {
         grid-area: header-image;
-    
+        @extend .header-image;
     }
 
     .contact-intro {
@@ -97,11 +97,12 @@ main {
         border: 3px solid $primary-color;
         border-radius: 12px;
         padding: 20px;
-        margin: 20px;
+        margin: 60px;
         box-sizing: border-box;
         text-align: center;
         width: 100%;
         max-width: 600px;
+        
     }
 
     .contact-info a {

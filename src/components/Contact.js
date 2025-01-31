@@ -3,7 +3,7 @@ import './Contact.scss'
 
 const Contact = () => {
     return (
-        <main> 
+        <main className='contact-page'> 
           {/* Header image */}
         <div className="header-image">
             <img src={require('../assets/contact-us.jpg')} alt="A person on the phone writing down details in a book"/>

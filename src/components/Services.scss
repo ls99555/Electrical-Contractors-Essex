@@ -1,0 +1,86 @@
+@import './src/App.scss';
+
+//services page
+.services-page {
+    display: grid;
+    grid-template-areas: 
+        "header-image header-image"
+        "domestic-image domestic-work"
+        "commercial-work commercial-image"
+        "fault-finding-image fault-finding-work"
+        "testing-inspection-work testing-inspection-image";
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    justify-items: center;
+
+    .header-image {
+        grid-area: header-image;
+        @extend .header-image;
+        img {
+            object-position: 0% 80%; 
+        }
+    }
+ 
+    .domestic-work {
+        grid-area: domestic-work;
+    }
+
+    .commercial-work {
+        grid-area: commercial-work;
+    }
+
+    .fault-finding-work {
+        grid-area: fault-finding-work;
+    }
+
+    .testing-inspection-work {
+        grid-area: testing-inspection-work;
+    }
+
+    .domestic-image {
+        grid-area: domestic-image;
+    }
+
+    .commercial-image {
+        grid-area: commercial-image;
+    }
+
+    .fault-finding-image {
+        grid-area: fault-finding-image;
+    }
+
+    .testing-inspection-image {
+        grid-area: testing-inspection-image;
+    }
+
+    .domestic-work, .commercial-work, .fault-finding-work, .testing-inspection-work {
+        background-color: $background-color;
+        border: 3px solid $primary-color;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        padding: 20px;
+        margin: 60px;
+    }
+
+    .domestic-image, .commercial-image, .fault-finding-image, .testing-inspection-image {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        width: 100%;
+        max-width: 400px;
+        padding: 0; 
+        margin: 0; 
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+    }
+}

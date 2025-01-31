@@ -1,6 +1,7 @@
 @import './src/App.scss';
 
- main {
+// Index Page Items
+.home {
     display: grid;
     grid-template-areas: 
         "header-image header-image"
@@ -11,6 +12,7 @@
 
     .header-image {
         grid-area: header-image;
+        @extend .header-image;
     }
 
     .about-us {
@@ -23,9 +25,8 @@
 
     .contact {
         grid-area: contact;
-        
 
-       li a {
+        li a {
             color: $primary-color;
             text-decoration: none; 
 
@@ -38,7 +39,6 @@
 
     .estimates {
         grid-area: estimates;
-        margin: 60px 30px 60px 60px;
     }
 
     .about-us, .our-services, .contact, .estimates {
