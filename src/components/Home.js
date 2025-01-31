@@ -49,7 +49,7 @@ const Home = () => {
                 <h2>Contact Us</h2>
                 <p>If you have any questions or need further information about our services, please do not hesitate to contact us. You can reach us by phone, email, or by visiting our office. Our contact details are as follows:</p>
                 <ul>
-                    <li>Phone: +44 1234 567890</li>
+                    <li>Phone: <a href="tel:+441234567890">+44 1234 567 890</a></li>
                     <li>Email: <a href="mailto:info@electricalcontractorsessex.co.uk">info@electricalcontractorsessex.co.uk</a></li>
                     <li>Address: 123 Electric Avenue, Essex, ES1 2AB, United Kingdom</li>
                 </ul>

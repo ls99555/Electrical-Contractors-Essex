@@ -1,4 +1,5 @@
 import React from 'react';
+import ContactForm from './ContactForm';
 import './Contact.scss'
 
 const Contact = () => {
@@ -37,7 +38,8 @@ const Contact = () => {
         </div>
         
         {/* Contact Form */}
-        <div className="contact-form-container">
+        <div className="contact-form">
+            <ContactForm />
         </div>
         </main>
     );

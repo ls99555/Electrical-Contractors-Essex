@@ -7,7 +7,7 @@
         "header-image header-image"
         "contact-intro contact-intro"
         "contact-info contact-map"
-        "contact-form-container contact-form-container";
+        "contact-form contact-form";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 20px;
@@ -40,62 +40,11 @@
         }
     }
 
-    .contact-form-container {
-        grid-area: contact-form-container;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: $background-color;
-        border: 3px solid $primary-color;
-        border-radius: 12px;
-        padding: 20px;
-        margin: 60px;
-        text-align: center;
-        width: 100%;
-        max-width: 600px;
-
-        form {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-
-            label {
-                margin-bottom: 10px;
-                text-align: left;
-            }
-
-            input[type="text"],
-            input[type="email"],
-            input[type="tel"],
-            textarea {
-                width: 100%;
-                padding: 10px;
-                margin-bottom: 10px;
-                border: 1px solid #ccc;
-                border-radius: 5px;
-                box-sizing: border-box;
-                transition: all 0.3s ease;
-            }
-
-            textarea {
-                height: 40px;
-                resize: none;
-
-                &:focus {
-                    height: 100px;
-                    resize: vertical;
-                }
-            }
-
-            .btn {
-                align-self: flex-end;
-                margin-top: 20px;
-            }
-        }
+    .contact-form{
+        grid-area: contact-form;
     }
 
-    .contact-intro, .contact-info, .contact-map, .contact-form-container {
+    .contact-intro, .contact-info, .contact-map, .contact-form {
         background-color: $background-color;
         border: 3px solid $primary-color;
         border-radius: 12px;
