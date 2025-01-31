@@ -1,10 +1,10 @@
 import React from 'react';
+import './Footer.scss'
 
 const Footer = () => {
     return (
         <div className='Footer'>
-         <h1>This is my footer</h1>
-         <p>hello</p>
+         <p>&#169; Electrical Contractors Essex Ltd 2024. Designed by <a href='https://github.com/ls99555?tab=repositories'> Luke Stevens</a></p>
         </div>
     );
 };

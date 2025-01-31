@@ -1,0 +1,22 @@
+@import './src/App.scss';
+
+.Footer {
+    background-color: $primary-color;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100px;
+    margin-top: 20px;
+
+    a {
+        color: $secondary-color;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}
