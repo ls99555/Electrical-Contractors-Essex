@@ -3,22 +3,14 @@
  main {
     display: grid;
     grid-template-areas: 
-        "cu-image cu-image"
+        "header-image header-image"
         "about-us our-services"
         "estimates contact";
     grid-template-rows: auto auto auto;
     grid-template-columns: 1fr 1fr;
 
-    .cu-image {
-        grid-area: cu-image;
-        padding: 0;
-        margin: 0;
-
-        img {
-            width: 100%; 
-            height: 400px; 
-            object-fit: cover;
-        }
+    .header-image {
+        grid-area: header-image;
     }
 
     .about-us {

@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <main>
             {/* Header Image */}
-            <div className="cu-image">
+            <div className="header-image">
                 <img src={require("../assets/cu.jpg" )}alt="Consumer unit" />
             </div>
         

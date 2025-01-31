@@ -1,0 +1,115 @@
+@import './src/App.scss';
+
+// Contact Page Styles
+main {
+    display: grid;
+    grid-template-areas: 
+        "header-image header-image"
+        "contact-intro contact-intro"
+        "contact-info contact-map"
+        "contact-form-container contact-form-container";
+    grid-template-rows: auto;
+    gap: 20px;
+    justify-items: center;
+
+    .header-image {
+        grid-area: header-image;
+    
+    }
+
+    .contact-intro {
+        grid-area: contact-intro;
+    }
+
+    .contact-info {
+        grid-area: contact-info;
+    }
+
+    .contact-map {
+        grid-area: contact-map;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            max-width: 500px;
+            max-height: 300px;
+        }
+    }
+
+    .contact-form-container {
+        grid-area: contact-form-container;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: $background-color;
+        border: 3px solid $primary-color;
+        border-radius: 12px;
+        padding: 20px;
+        margin: 60px;
+        
+        text-align: center;
+        width: 100%;
+        max-width: 600px;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            label {
+                margin-bottom: 10px;
+                text-align: left;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"],
+            textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-sizing: border-box;
+                transition: all 0.3s ease;
+            }
+
+            textarea {
+                height: 40px;
+                resize: none;
+
+                &:focus {
+                    height: 100px;
+                    resize: vertical;
+                }
+            }
+
+            .btn {
+                align-self: flex-end;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .contact-intro, .contact-info, .contact-map, .contact-form-container {
+        background-color: $background-color;
+        border: 3px solid $primary-color;
+        border-radius: 12px;
+        padding: 20px;
+        margin: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .contact-info a {
+        color: $primary-color;
+        text-decoration: none; 
+    
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
