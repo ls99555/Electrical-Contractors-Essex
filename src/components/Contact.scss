@@ -8,6 +8,7 @@
         "contact-intro contact-intro"
         "contact-info contact-map"
         "contact-form-container contact-form-container";
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 20px;
     justify-items: center;
@@ -19,6 +20,7 @@
 
     .contact-intro {
         grid-area: contact-intro;
+        
     }
 
     .contact-info {
@@ -27,6 +29,8 @@
 
     .contact-map {
         grid-area: contact-map;
+        
+    
 
         iframe {
             width: 100%;
@@ -47,7 +51,6 @@
         border-radius: 12px;
         padding: 20px;
         margin: 60px;
-        
         text-align: center;
         width: 100%;
         max-width: 600px;

@@ -18,8 +18,9 @@
     .header-image {
         grid-area: header-image;
         @extend .header-image;
+        width: 100%;
         img {
-            object-position: 0% 80%; 
+            object-position: 0% 72%; 
         }
     }
  
