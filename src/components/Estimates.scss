@@ -9,7 +9,7 @@
         "domestic-estimates domestic-list"
         "commercial-estimates commercial-list"
         "testing-estimate testing-list"
-        "total-price-container total-price-container";
+        "total-price-form total-price-form";
     grid-template-rows: auto;
     gap: 20px;
     justify-items: center;
@@ -56,15 +56,15 @@
         grid-area: testing-list;
     }
 
-    .total-price-container {
-        grid-area: total-price-container;
+    .total-price-form {
+        grid-area: total-price-form;
         
     }
 
     
 
 
-    .intro-estimates, .domestic-estimates, .commercial-estimates, .testing-estimate, .domestic-list, .commercial-list, .testing-list, .total-price-container {
+    .intro-estimates, .domestic-estimates, .commercial-estimates, .testing-estimate, .domestic-list, .commercial-list, .testing-list, .total-price-form {
         background-color: $background-color;
         border: 3px solid $primary-color;
         border-radius: 12px;
@@ -77,94 +77,5 @@
         text-align: center; 
         flex: 1; 
         padding: 20px;
-    }
-
-    // Estimates Form Styling 
-    .estimates-form {
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            background-color: #f9f9f9;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 30px;
-            margin-bottom: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.103);
-            transition: background-color 0.3s ease;
-
-            &:hover {
-                background-color: #f1f1f1;
-            }
-        }
-
-        label {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-            background-color: #f9f9f9;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease;
-
-            &:hover {
-                background-color: #f1f1f1;
-            }
-
-            input {
-                margin-left: 20px; 
-                width: 50px;
-            }
-        }
-    }
-
-    .additional-info-form {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        max-width: 600px; 
-        margin: 0 auto; 
-        padding: 20px; 
-        box-sizing: border-box; 
-
-        label {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            width: 100%;
-            margin-bottom: 10px;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        input[type="tel"],
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
-            transition: all 0.3s ease;
-        }
-
-        textarea {
-            height: 20px;
-            resize: none;
-
-            &:focus {
-                height: 100px;
-                resize: vertical;
-            }
-        }
-
-        .btn {
-            align-self: flex-end;
-            margin-top: 20px;
-        }
     }
 }

@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
+import EstimatesList from './EstimatesList';
+import EstimatesForm from './EstimatesForm';
 import './Estimates.scss';
 
 const Estimates = () => {
+  const [domesticTotal, setDomesticTotal] = useState(0);
+    const [commercialTotal, setCommercialTotal] = useState(0);
+    const [testingTotal, setTestingTotal] = useState(0);
+    
+    const totalEstimate = domesticTotal + commercialTotal + testingTotal;
+    
     return (
       <main className="estimates-page">
+        
         {/* Header picture for estimates page */}
         <div className="header-image">
           <img src={require('../assets/estimates.jpg')} alt="Blueprints for a house." />
@@ -28,7 +37,9 @@ const Estimates = () => {
           </ul>
         </div>
        
-        <div className="domestic-list"></div>
+        <div className="domestic-list">
+          <EstimatesList serviceType="domestic" headingText="Domestic Services" setTotal={setDomesticTotal} />
+        </div>
          
         <div className="commercial-estimates">
           <h2>Commercial Electrical Work</h2>
@@ -42,7 +53,9 @@ const Estimates = () => {
           </ul>
         </div>
        
-        <div className="commercial-list"></div>
+        <div className="commercial-list">
+          <EstimatesList serviceType="commercial" headingText="Commercial Services" setTotal={setCommercialTotal} />
+        </div>
 
         <div className="testing-estimate">
           <h2>Electrical Testing and Inspection</h2>
@@ -55,12 +68,14 @@ const Estimates = () => {
           </ul>
         </div>
         
-        <div className="testing-list"></div>
+        <div className="testing-list">
+          <EstimatesList serviceType="testing" headingText="Testing Services" setTotal={setTestingTotal} />
+        </div>
 
         {/* Combined container for total price and additional info form */}
-        <div className="additional-info-form-container"></div>
-        <div className="total-price"></div>
-        <div className="total-estimate"></div>
+        <div className='total-price-form'>
+          <EstimatesForm  totalEstimate={totalEstimate} />
+        </div>
       
       </main>
     );
