@@ -85,3 +85,33 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .services-page {
+        padding: 16px;
+    }
+
+    .service {
+        padding: 16px;
+        margin: 16px;
+    }
+
+    .service-image {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-page {
+        padding: 10px;
+    }
+
+    .service {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .service-image {
+        max-width: 200px;
+    }
+}

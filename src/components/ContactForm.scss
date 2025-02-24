@@ -76,3 +76,27 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 16px;
+        margin: 16px auto;
+    }
+
+    .btn {
+        width: 100%; 
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form {
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    .btn {
+        width: 100%; 
+        text-align: center;
+    }
+}

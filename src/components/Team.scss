@@ -33,3 +33,35 @@
         object-fit: cover;
     }
 }
+
+@media (max-width: 768px) {
+    .team-page {
+        padding: 16px;
+    }
+
+    .our-team, .david-johnson, .john-smith, .sarah-johnson, .michael-brown, .emily-davis, .james-wilson {
+        padding: 16px;
+        margin: 16px;
+    }
+
+    .team-photos {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-page {
+        padding: 10px;
+    }
+
+    .our-team, .david-johnson, .john-smith, .sarah-johnson, .michael-brown, .emily-davis, .james-wilson {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .team-photos {
+        height: 100px;
+        width: 100px;
+    }
+}

@@ -12,7 +12,7 @@ const Team = () => {
                 <h2>Our Team</h2>
                 <p>At Electrical Contractors Essex, we pride ourselves on having a team of highly skilled and dedicated professionals who are committed to delivering top-quality electrical services. Our team is composed of experienced electricians, project managers, and support staff who work together to ensure that every project is completed to the highest standards of safety and excellence.</p>
                 <p>Our electricians are fully certified and have extensive experience in both residential and commercial electrical work. They are equipped with the latest tools and technology to handle any electrical issue, from simple repairs to complex installations. Our project managers oversee each project from start to finish, ensuring that all work is completed on time and within budget.</p>
-                <p>We believe in continuous learning and development, which is why we invest in regular training for our team members. This ensures that they are always up-to-date with the latest industry standards and best practices. Our support staff is always ready to assist with any inquiries and provide exceptional customer service.</p>
+                <p>We believe in continuous learning and development, which is why we invest in regular training for our team members. This ensures that they are always up to date with the latest industry standards and best practices. Our support staff is always ready to assist with any inquiries and provide exceptional customer service.</p>
             </div>
 
             <div className="david-johnson">
@@ -36,7 +36,7 @@ const Team = () => {
             <div className="michael-brown">
                 <img className="team-photos" src={require('../assets/micheal.jpg')} alt="Michael Brown" />
                 <h3>Michael Brown</h3>
-                <p>Michael is an experienced electrician with expertise in electrical installations and repairs. He is committed to providing efficient and cost-effective solutions for all your electrical needs.</p>
+                <p>Michael is an experienced electrician with expertise in electrical installations and repairs. He is committed to providing efficient and cost effective solutions for all your electrical needs.</p>
             </div>
 
             <div className="emily-davis">

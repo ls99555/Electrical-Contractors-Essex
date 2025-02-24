@@ -8,6 +8,7 @@ import Team from './components/Team';
 import Services from './components/Services';
 import Estimates from './components/Estimates';
 import Contact from './components/Contact';
+import './App.scss';
 
 // Import styling for App.scss
 import './App.scss';

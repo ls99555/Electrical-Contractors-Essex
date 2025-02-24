@@ -50,3 +50,15 @@
         margin-top: 40px;
     }
 }
+
+@media (max-width: 768px) {
+    .estimate-form form {
+        grid-template-columns: repeat(2, 1fr); // Adjust to 2 columns for tablet screens
+    }
+}
+
+@media (max-width: 480px) {
+    .estimate-form form {
+        grid-template-columns: 1fr; // Adjust to 1 column for mobile screens
+    }
+}

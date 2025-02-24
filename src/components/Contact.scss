@@ -66,3 +66,35 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .contact-page {
+        padding: 16px;
+    }
+
+    .contact-intro, .contact-info, .contact-map, .contact-form {
+        padding: 16px;
+        margin: 16px;
+    }
+
+    .contact-map iframe {
+        max-width: 400px;
+        max-height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-page {
+        padding: 10px;
+    }
+
+    .contact-intro, .contact-info, .contact-map, .contact-form {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .contact-map iframe {
+        max-width: 300px;
+        max-height: 200px;
+    }
+}

@@ -5,7 +5,7 @@ import './Button.scss';
 const Button = ({ text, to, onClick }) => {
     return (
         <Link to={to} className='arrow-button' onClick={onClick}>
-            {text}<span className='button-arrow'> &gt;&gt; </span>
+            <span className='button-arrow'> &lt;&lt; </span>{text}<span className='button-arrow'> &gt;&gt; </span>
         </Link>
     );
 };
