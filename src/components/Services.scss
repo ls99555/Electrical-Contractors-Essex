@@ -1,117 +1,101 @@
 @import './src/App.scss';
 
-//services page
+// Services Page 
 .services-page {
     display: grid;
-    grid-template-areas: 
-        "header-image header-image"
-        "domestic-image domestic-work"
-        "commercial-work commercial-image"
-        "fault-finding-image fault-finding-work"
-        "testing-inspection-work testing-inspection-image";
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    justify-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 40px;
+    transition: width 0.5s ease;
 
-    .header-image {
-        grid-area: header-image;
-        @extend .header-image;
-        width: 100%;
-        img {
-            object-position: 0% 72%; 
-        }
-    }
- 
-    .domestic-work {
-        grid-area: domestic-work;
-    }
-
-    .commercial-work {
-        grid-area: commercial-work;
-    }
-
-    .fault-finding-work {
-        grid-area: fault-finding-work;
-    }
-
-    .testing-inspection-work {
-        grid-area: testing-inspection-work;
-    }
-
-    .domestic-image {
-        grid-area: domestic-image;
-    }
-
-    .commercial-image {
-        grid-area: commercial-image;
-    }
-
-    .fault-finding-image {
-        grid-area: fault-finding-image;
-    }
-
-    .testing-inspection-image {
-        grid-area: testing-inspection-image;
-    }
-
-    .domestic-work, .commercial-work, .fault-finding-work, .testing-inspection-work {
+    .service-item {
         background-color: $background-color;
         border: 3px solid $primary-color;
         border-radius: 12px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         padding: 20px;
-        margin: 60px;
+        box-sizing: border-box;
     }
 
-    .domestic-image, .commercial-image, .fault-finding-image, .testing-inspection-image {
+    .service-image {
         display: flex;
-        justify-content: center; 
-        align-items: center; 
-        width: 100%;
-        max-width: 400px;
-        padding: 0; 
-        margin: 0; 
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
 
         img {
-            width: 100%;
-            height: auto;
+            width: 300px;
+            height: 300px;
             border-radius: 12px;
             object-fit: cover;
         }
     }
 }
 
+
 @media (max-width: 768px) {
     .services-page {
-        padding: 16px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "image1"
+            "item1"
+            "image2"
+            "item2"
+            "image3"
+            "item3"
+            "image4"
+            "item4";
     }
 
-    .service {
-        padding: 16px;
-        margin: 16px;
-    }
 
-    .service-image {
-        max-width: 300px;
-    }
-}
-
-@media (max-width: 480px) {
-    .services-page {
-        padding: 10px;
-    }
-
-    .service {
-        padding: 10px;
+    .service-item, .service-image {
         margin: 10px;
     }
 
-    .service-image {
-        max-width: 200px;
+    .service-image:nth-child(1) {
+        grid-area: image1;
+    }
+
+    .service-item:nth-child(2) {
+        grid-area: item1;
+    }
+
+    .service-image:nth-child(4) {
+        grid-area: image2;
+    }
+
+    .service-item:nth-child(3) {
+        grid-area: item2;
+    }
+
+    .service-image:nth-child(6) {
+        grid-area: image3;
+    }
+
+    .service-item:nth-child(5) {
+        grid-area: item3;
+    }
+
+    .service-image:nth-child(8) {
+        grid-area: image4;
+    }
+
+    .service-item:nth-child(7) {
+        grid-area: item4;
     }
 }
+
+.header-image {
+    @extend .header-image;
+
+    img {
+        object-position: 0% 78%;
+    }
+   }

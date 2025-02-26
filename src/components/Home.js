@@ -4,12 +4,13 @@ import Button from './Button';
 
 const Home = () => {
     return (
-        <main className='home'>
+        <main>
             {/* Header Image */}
-            <div className="header-image">
+            <header className="header-image">
                 <img src={require("../assets/cu.jpg" )}alt="Consumer unit" />
-            </div>
-        
+            </header>
+           
+           <div className='home'>
             {/* Brief description of about us with a button link to team.html page */}
             <div className="about-us">
                 <h2>About Us</h2>
@@ -55,6 +56,7 @@ const Home = () => {
                 </ul>
                 <p>We are committed to providing excellent customer service and will respond to your inquiries as quickly as possible. Thank you for considering Electrical Contractors Essex for your electrical needs. We look forward to hearing from you!</p>
                 <Button text="Contact us now" to='/contact' />
+            </div>
             </div>
         </main>
     );

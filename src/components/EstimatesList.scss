@@ -51,9 +51,9 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .estimate-form form {
-        grid-template-columns: repeat(2, 1fr); // Adjust to 2 columns for tablet screens
+        grid-template-columns: 1fr; // Adjust to 2 columns for tablet screens
     }
 }
 

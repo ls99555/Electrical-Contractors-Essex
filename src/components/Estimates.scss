@@ -1,81 +1,66 @@
-@import './src/App.scss';
+@import '../App.scss';
 
-// Estimates Page
+// Estimates Page Items
 .estimates-page {
     display: grid;
-    grid-template-areas: 
-        "header-image header-image"
-        "intro-estimates intro-estimates"
-        "domestic-estimates domestic-list"
-        "commercial-estimates commercial-list"
-        "testing-estimate testing-list"
-        "total-price-form total-price-form";
-    grid-template-rows: auto;
-    gap: 20px;
-    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 20px;
+    margin: 40px;
+    box-sizing: border-box;
+    transition: width 0.5s ease;
 
     .header-image {
-        grid-area: header-image;
-        @extend .header-image;
+        grid-column: span 2;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
     }
 
-
-    .estimates-form {
-        grid-column: span 3;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px; 
-    }
-
-    
     .intro-estimates {
-        grid-area: intro-estimates;
+        grid-column: span 2;
+        width: 100%;
+        max-width: 800px;
+        margin-bottom: 40px;
+        text-align: center;
+        justify-self: center;
     }
 
-    .domestic-estimates {
-        grid-area: domestic-estimates;
-    }
-
-    .domestic-list {
-        grid-area: domestic-list;
-    }
-
-    .commercial-estimates {
-        grid-area: commercial-estimates;
-    }
-
-    .commercial-list {
-        grid-area: commercial-list;
-    }
-
-    .testing-estimate {
-        grid-area: testing-estimate;
-    }
-
-    .testing-list {
-        grid-area: testing-list;
-    }
-
-    .total-price-form {
-        grid-area: total-price-form;
-        
-    }
-
-    
-
-
-    .intro-estimates, .domestic-estimates, .commercial-estimates, .testing-estimate, .domestic-list, .commercial-list, .testing-list, .total-price-form {
+    .estimates, .list, .intro-estimates, .total-price-form {
         background-color: $background-color;
         border: 3px solid $primary-color;
         border-radius: 12px;
-        margin: 60px;
-        box-sizing: border-box; 
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center; 
-        text-align: center; 
-        flex: 1; 
+        align-items: center;
+        text-align: center;
         padding: 20px;
+        box-sizing: border-box;
+        width: 100%;
     }
+
+    .total-price-form {
+        max-width: 600px;
+        grid-column: span 2;
+        justify-self: center;
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 800px) {
+    .estimates-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+
+    
 }

@@ -3,6 +3,8 @@ import EstimatesList from './EstimatesList';
 import EstimatesForm from './EstimatesForm';
 import './Estimates.scss';
 
+
+
 const Estimates = () => {
   const [domesticTotal, setDomesticTotal] = useState(0);
     const [commercialTotal, setCommercialTotal] = useState(0);
@@ -11,21 +13,21 @@ const Estimates = () => {
     const totalEstimate = domesticTotal + commercialTotal + testingTotal;
     
     return (
-      <main className="estimates-page">
+      <main>
         
         {/* Header picture for estimates page */}
-        <div className="header-image">
+        <header className="header-image">
           <img src={require('../assets/estimates.jpg')} alt="Blueprints for a house." />
-        </div>
-        
+        </header>
+        <div className="estimates-page">
         <div className="intro-estimates">
           <h1>Get Your Estimate</h1>
           <p>Welcome to the Electrical Contractors Essex estimates page. This page is designed to provide you with a rough pricing system for your electrical projects. By filling out the form below, you can receive a free, no-obligation estimate for the services you need.</p>
           <p>Our estimates are based on the information you provide and are intended to give you a general idea of the costs involved. For a more accurate and detailed quote, we recommend scheduling an on-site consultation with one of our experienced electricians.</p>
           <p>Please fill out the form with your contact information and a brief description of your project. One of our team members will review your request and get back to you promptly with an estimate. We look forward to helping you with your electrical needs.</p>    
         </div>
-       
-        <div className="domestic-estimates">
+      
+          <div className="estimates">
           <h2>Domestic Electrical Work</h2>
           <p>We offer a wide range of domestic electrical services to ensure your home is safe and functional. Our services include:</p>
           <ul>
@@ -37,11 +39,11 @@ const Estimates = () => {
           </ul>
         </div>
        
-        <div className="domestic-list">
+        <div className="list">
           <EstimatesList serviceType="domestic" headingText="Domestic Services" setTotal={setDomesticTotal} />
         </div>
          
-        <div className="commercial-estimates">
+        <div className="estimates">
           <h2>Commercial Electrical Work</h2>
           <p>Our commercial electrical services are designed to meet the needs of businesses of all sizes. We provide:</p>
           <ul>
@@ -53,11 +55,11 @@ const Estimates = () => {
           </ul>
         </div>
        
-        <div className="commercial-list">
+        <div className="list">
           <EstimatesList serviceType="commercial" headingText="Commercial Services" setTotal={setCommercialTotal} />
         </div>
 
-        <div className="testing-estimate">
+        <div className="estimates">
           <h2>Electrical Testing and Inspection</h2>
           <p>We offer thorough electrical testing and inspection services to ensure the safety and reliability of your electrical systems. Our services include:</p>
           <ul>
@@ -68,7 +70,7 @@ const Estimates = () => {
           </ul>
         </div>
         
-        <div className="testing-list">
+        <div className="list">
           <EstimatesList serviceType="testing" headingText="Testing Services" setTotal={setTestingTotal} />
         </div>
 
@@ -76,7 +78,7 @@ const Estimates = () => {
         <div className='total-price-form'>
           <EstimatesForm  totalEstimate={totalEstimate} />
         </div>
-      
+        </div>
       </main>
     );
 };

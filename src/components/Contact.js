@@ -4,12 +4,12 @@ import './Contact.scss'
 
 const Contact = () => {
     return (
-        <main className='contact-page'> 
+        <main className="contact-page"> 
           {/* Header image */}
-        <div className="header-image">
+        <header className="header-image">
             <img src={require('../assets/contact-us.jpg')} alt="A person on the phone writing down details in a book"/>
-        </div>
-        
+        </header>
+
         {/* Introduction */}
         <div className="contact-intro">
             <h1>Contact Us</h1>
